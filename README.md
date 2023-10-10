@@ -7,7 +7,7 @@ Explanation for source codes is the follwing;
 
 ## Evo_lowdim_.cpp
 
-A program for evolutionary simulation to introduce low-dimensional structure into gene regulatory networks.
+A program for evolutionary simulation to introduce low-dimensional structure into gene regulatory networks (using in the Sec.III in the paper).
 
 (ex.) The case with $\tilde{P}=1,\alpha=0.45$ and random_seed_genotype : 0.
 ```bash
@@ -17,7 +17,7 @@ a.out 1 0.45 0
 
 ## Calc_VE_.cpp (Calc_VG_.cpp)
 
-A program to obtain phenotypic changes due to environmental stress (genotypic mutations) in the evolved gene regulatory network obtained with "Evo_lowdim_.cpp".
+A program to obtain phenotypic changes due to environmental stress (genotypic mutations) in the evolved gene regulatory network obtained with "Evo_lowdim_.cpp" (using in the Sec.III B in the paper).
 
 (ex.) The case to calculate phenotypic changes due to environmental stresses with the cells of the 2nd fittest cells. 
 ```bash
@@ -28,7 +28,7 @@ a.out 1 0.45 0 1
 
 ## Evo_antibiotics_.cpp
 
-A program to simulate adaptive evolution to environmental stress from the gene regulatory network obtained with "Evo_lowdim_.cpp".
+A program to simulate adaptive evolution to environmental stress from the gene regulatory network obtained with "Evo_lowdim_.cpp" (using in the Sec.IV in the paper).
 
 (ex.) The case with $\tilde{P}=1, \alpha=0.45$, random_seed_genotype : 0 and random_seed_antibiotics : 1.
 ```bash
@@ -38,7 +38,7 @@ a.out 1 0.45 0 1
 
 ## Calc_base_.cpp
 
-A program to calculate the fitness with environmental stress in the parental network in "Evo_antibiotics_.cpp".
+A program to calculate the fitness with environmental stress in the parental network in "Evo_antibiotics_.cpp" (using in the  Sec.IV in the paper).
 
 (ex.) The case with $\tilde{P}=1, \alpha=0.45$, random_seed_genotype : 0 and random_seed_antibiotics : 1.
 ```bash
@@ -48,7 +48,7 @@ a.out 1 0.45 0 1
 
 ## Calc_cross_.cpp
 
-A program to calculate the cross-fitness.
+A program to calculate the cross-fitness (using in the Sec.IV in the paper).
 
 (ex.) The case with $\tilde{P}=1, \alpha=0.45$, random_seed_genotype : 0 and random_seed_antibiotics in evolved cell : 1 and random_seed_antibiotics to calculate cross-fitness : 2.
 ```bash
